@@ -34,6 +34,7 @@ Game.getCoordinates = function(layer, pointer) {
 
 Game.addNewPlayer = function(id, x, y) {
   Game.playerMap[id] = game.add.sprite(x, y, "sprite");
+  Game.playerMap[id].anchor.setTo(0.5);
 };
 
 Game.movePlayer = function(id, x, y) {
